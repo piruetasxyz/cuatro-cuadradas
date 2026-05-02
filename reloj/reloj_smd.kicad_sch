@@ -1415,7 +1415,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Timer:NE555P"
+		(symbol "Timer:NE555D"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1432,7 +1432,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NE555P"
+			(property "Value" "NE555D"
 				(at 2.54 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1443,7 +1443,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 				(at 0 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1465,7 +1465,7 @@
 					)
 				)
 			)
-			(property "Description" "Precision Timers, 555 compatible, PDIP-8"
+			(property "Description" "Precision Timers, 555 compatible, SOIC-8"
 				(at 0 -21.59 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1487,7 +1487,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1498,7 +1498,7 @@
 					)
 				)
 			)
-			(symbol "NE555P_0_0"
+			(symbol "NE555D_0_0"
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
@@ -1536,7 +1536,7 @@
 					)
 				)
 			)
-			(symbol "NE555P_0_1"
+			(symbol "NE555D_0_1"
 				(rectangle
 					(start -7.62 7.62)
 					(end 7.62 -7.62)
@@ -1549,7 +1549,7 @@
 					)
 				)
 			)
-			(symbol "NE555P_1_1"
+			(symbol "NE555D_1_1"
 				(pin input line
 					(at -10.16 -5.08 0)
 					(length 2.54)
@@ -2564,7 +2564,7 @@
 			(uuid "8b4b4dd5-24d9-4b44-aaf7-3af672b5cd03")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "RV1")
 					(unit 1)
@@ -2642,9 +2642,107 @@
 			(uuid "c5cfebc3-4f1b-476d-92ff-31ab59c3f633")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Timer:NE555D")
+		(at 99.06 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14fb8474-4ad5-412e-aee6-0c4229e0e70c")
+		(property "Reference" "U1"
+			(at 111.76 102.7998 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NE555D"
+			(at 111.76 105.3398 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 99.06 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf"
+			(at 99.06 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Timers, 555 compatible, SOIC-8"
+			(at 99.06 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a98d3111-4be4-4279-8ef9-a7d9be60fd66")
+		)
+		(pin "8"
+			(uuid "e80c69b7-bb9d-436e-a5f0-805d6154c3df")
+		)
+		(pin "2"
+			(uuid "b1c7a28f-d782-4e68-b8bc-ba24d7f6abf1")
+		)
+		(pin "3"
+			(uuid "ba38f080-ae6f-4a95-9416-d986cf53ff4c")
+		)
+		(pin "4"
+			(uuid "ff3c90f6-5046-4183-be29-1b6d04758209")
+		)
+		(pin "5"
+			(uuid "103bba9d-f733-410e-b314-d81239936eeb")
+		)
+		(pin "6"
+			(uuid "d91ea77f-aa85-44dc-a44d-afaea12d5a21")
+		)
+		(pin "7"
+			(uuid "bbbc19f3-cedb-4c0a-aca7-e5d7055bcff8")
+		)
+		(instances
+			(project "reloj_smd"
+				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2720,7 +2818,7 @@
 			(uuid "49a92088-acce-46c4-8d1c-516709317b22")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR012")
 					(unit 1)
@@ -2802,107 +2900,9 @@
 			(uuid "5c05c137-1876-4246-a23c-212968eba604")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Timer:NE555P")
-		(at 99.06 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "234df75d-166a-4ba5-8ea5-eaba48a7cc64")
-		(property "Reference" "U1"
-			(at 111.76 102.7998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NE555P"
-			(at 111.76 105.3398 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
-			(at 99.06 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf"
-			(at 99.06 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Precision Timers, 555 compatible, PDIP-8"
-			(at 99.06 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "69a7bbf1-7cc2-4494-855b-9822b5e9a154")
-		)
-		(pin "8"
-			(uuid "20a6d99c-add6-4241-93b4-2854b96a18c5")
-		)
-		(pin "1"
-			(uuid "0932f87c-2f63-4ffb-b658-43d2ed37fee1")
-		)
-		(pin "4"
-			(uuid "4612147e-71d4-42cc-80b8-3eccb3d02762")
-		)
-		(pin "5"
-			(uuid "e35c4668-0c2e-41d9-9afd-96b7134e1428")
-		)
-		(pin "3"
-			(uuid "8cfef914-0ad8-475e-9257-b821078a79f6")
-		)
-		(pin "6"
-			(uuid "bacba258-24c1-458b-a973-24669b3483ed")
-		)
-		(pin "7"
-			(uuid "be2f2ac1-2481-4e30-a519-12f28942d7c1")
-		)
-		(instances
-			(project "reloj"
-				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2993,7 +2993,7 @@
 			(uuid "568480a2-c90d-4c39-911f-afcdabde215b")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "D1")
 					(unit 1)
@@ -3075,7 +3075,7 @@
 			(uuid "a35aa33d-ac61-406b-ba83-0c7a84727d8a")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "R3")
 					(unit 1)
@@ -3153,7 +3153,7 @@
 			(uuid "9c1d54c5-37c6-4a33-bcc6-70a04ecfe2fb")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR08")
 					(unit 1)
@@ -3231,7 +3231,7 @@
 			(uuid "6d40babf-ab40-4c04-aa85-2020ca4fe246")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR09")
 					(unit 1)
@@ -3309,7 +3309,7 @@
 			(uuid "ce57510f-6a98-4364-9df3-d05949f02d45")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR04")
 					(unit 1)
@@ -3387,7 +3387,7 @@
 			(uuid "56988af2-7c00-4382-ba54-49b2db09af85")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR01")
 					(unit 1)
@@ -3467,7 +3467,7 @@
 			(uuid "2ecf155a-7618-4213-a6cf-2cd5f10f3627")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "J1")
 					(unit 1)
@@ -3545,7 +3545,7 @@
 			(uuid "941ae369-c22a-4f4c-832c-a087d54b057a")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR03")
 					(unit 1)
@@ -3638,7 +3638,7 @@
 			(uuid "ebe71ba8-23c0-4f4d-ab7f-840c84018383")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "C1")
 					(unit 1)
@@ -3720,7 +3720,7 @@
 			(uuid "19b1d6e5-7ba0-4c8b-9ad5-d90ea34edcb3")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "C3")
 					(unit 1)
@@ -3798,7 +3798,7 @@
 			(uuid "4fd8de7a-9793-4086-9e7b-839939e83998")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR05")
 					(unit 1)
@@ -3891,7 +3891,7 @@
 			(uuid "dca4d3be-bc28-41ba-a77e-b52d99311f0c")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "D3")
 					(unit 1)
@@ -3973,7 +3973,7 @@
 			(uuid "afe45274-ee71-4580-8cde-b3528b7c5814")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "R2")
 					(unit 1)
@@ -4055,7 +4055,7 @@
 			(uuid "5a36f61a-64f7-401e-8b7c-cc55410a7b4f")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "J3")
 					(unit 1)
@@ -4133,7 +4133,7 @@
 			(uuid "c78b61d4-8ac0-4248-9fad-d7dead07df2b")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR07")
 					(unit 1)
@@ -4213,7 +4213,7 @@
 			(uuid "a45a5f8d-7622-4996-9c45-a7d61c943edc")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "J2")
 					(unit 1)
@@ -4295,7 +4295,7 @@
 			(uuid "4c6e168e-eab6-4ec9-8f40-d465f010aa84")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "R1")
 					(unit 1)
@@ -4373,7 +4373,7 @@
 			(uuid "eb913a5f-35cc-40a0-85b3-9f125aa01520")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR06")
 					(unit 1)
@@ -4451,7 +4451,7 @@
 			(uuid "16944c4f-b60d-4eb4-9988-c0d619d4660e")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR02")
 					(unit 1)
@@ -4533,7 +4533,7 @@
 			(uuid "1b611df4-0381-4ac5-900a-36a3c33b0b41")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "C4")
 					(unit 1)
@@ -4611,7 +4611,7 @@
 			(uuid "ebf52699-d22c-44bf-bf34-ef3d497276a5")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "#PWR011")
 					(unit 1)
@@ -4702,7 +4702,7 @@
 			(uuid "1aac3b5b-a144-4890-8834-fe79a8371a22")
 		)
 		(instances
-			(project "reloj"
+			(project "reloj_smd"
 				(path "/fe13e28c-ea94-4bcc-9b18-67f88f1c47ae"
 					(reference "D2")
 					(unit 1)
